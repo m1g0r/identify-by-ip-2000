@@ -1,12 +1,12 @@
 {
     "swagger": "2.0",
     "info": {
-        "version": "1.0.0",
-        "title": "duke-vychyslyator-po-ip-2000",
+        "version": "0.0.1",
+        "title": "identify-by-ip-2000",
         "description": "API for get GEO Locations (country, region, city, timezone, latitude/longitude) by IP address.",
         "license": {
-            "name": "MIT",
-            "url": "https://opensource.org/licenses/MIT"
+            "name": "Apache-2.0",
+            "url": "https://github.com/m1g0r/identify-by-ip-2000/blob/master/LICENSE"
         }
     },
     "host": "localhost:8080",
@@ -14,7 +14,7 @@
     "tags": [
         {
             "name": "Locations",
-            "description": "API for get GEO Locations by IP address"
+            "description": "API for get GEO Locations (country, region, city, timezone, latitude/longitude) by IP address."
         }
     ],
     "schemes": [

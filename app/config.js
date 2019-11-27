@@ -4,7 +4,7 @@ const config = {
     env,
     host: "127.0.0.1",
     version: "1.0.0",
-    name: "duke-vychyslyator-po-ip-2000",
+    name: "identify-by-ip-2000",
     port: process.env.PORT || 8080,
 };
 
