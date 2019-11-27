@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({}));
 
 app.get("/", (req, res) => {
-    res.json({ message: `Welcome to IP-Locations application. Version: ${config.version}` });
+    res.json({ message: `${config.name}. Version: ${config.version}` });
 });
 
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
