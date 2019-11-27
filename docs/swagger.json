@@ -1,0 +1,77 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "duke-vychyslyator-po-ip-2000",
+        "description": "API for get GEO Locations (country, region, city, timezone, latitude/longitude) by IP address.",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:8080",
+    "basePath": "/v1",
+    "tags": [
+        {
+            "name": "Locations",
+            "description": "API for get GEO Locations by IP address"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/locations/?ip={ip_address}": {
+            "parameters": [
+                {
+                    "name": "ip_address",
+                    "in": "path",
+                    "required": true,
+                    "description": "ip_address that we want to find",
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "summary": "Get locations by IP",
+                "responses": {
+                    "200": {
+                        "description": "Locations is found",
+                        "schema": {
+                            "$ref": "#/definitions/Locations"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Locations": {
+            "required": [
+                "ip"
+            ],
+            "properties": {
+                "country": {
+                    "type": "string"
+                },
+                "region": {
+                    "type": "string"
+                },
+                "timezone": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
