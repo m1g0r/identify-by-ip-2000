@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "geoip-lite": "^1.3.7",
     "jsonschema": "^1.2.4",
     "swagger-ui-express": "^4.0.2",
